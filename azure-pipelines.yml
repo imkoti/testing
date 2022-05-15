@@ -37,8 +37,9 @@ stages:
 
     - script: |
         npm install -g gatsby-cli
-        gatsby develop
-        gatsby build
+        npm install
+        npm run build
+        npm run start
       displayName: 'gatsby install, build and test'
 
     - task: ArchiveFiles@2
